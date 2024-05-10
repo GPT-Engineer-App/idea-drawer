@@ -42,7 +42,6 @@ const Index = () => {
   const addNote = () => {
     const newNote = { id: Date.now(), title: '', content: '' };
     setNotes([...notes, newNote]);
-    setEditMode(true);
   };
 
   const saveNote = (id, title, content) => {
